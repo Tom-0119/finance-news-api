@@ -2,6 +2,7 @@
 from flask import Flask, jsonify
 import crawler  # 导入你写好的爬虫类
 import threading
+import time
 
 app = Flask(__name__)
 
@@ -44,3 +45,4 @@ if __name__ == '__main__':
     
     # 运行 Flask
     app.run(host='0.0.0.0', port=5000)
+
